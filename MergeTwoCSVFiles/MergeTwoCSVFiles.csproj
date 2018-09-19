@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2CD07C0-52F7-4347-B5AA-A68884F2F3BD}</ProjectGuid>
+    <ProjectGuid>{E414FB8F-70F7-4AF7-B3BB-5D7DBE79C700}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LanguageIntegratedQuery</RootNamespace>
-    <AssemblyName>LanguageIntegratedQuery</AssemblyName>
+    <RootNamespace>MergeTwoCSVFiles</RootNamespace>
+    <AssemblyName>MergeTwoCSVFiles</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>LanguageIntegratedQuery.ProgramA</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,11 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs" />
-    <Compile Include="MyExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

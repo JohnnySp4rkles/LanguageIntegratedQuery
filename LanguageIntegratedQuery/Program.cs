@@ -89,10 +89,12 @@ namespace LanguageIntegratedQuery
                 select new { user = user.F_name + " " + user.L_name, film.FilmTitle };
 
             // Let Clause
-            string[] names = { "Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" };            IEnumerable<string> queryFirstNames =
+            string[] names = { "Svetlana Omelchenko", "Claire O'Donnell", "Sven Mortensen", "Cesar Garcia" };
+            IEnumerable<string> queryFirstNames =
                 from name in names
                 let firstName = name.Split(' ')[0]
-                select firstName;
+                select firstName;
+
             // SubQueries
             var queryGroupMax =
                 from student in d.students
@@ -108,7 +110,8 @@ namespace LanguageIntegratedQuery
 
             // Query Syntax
             // Query #1
-            IEnumerable<int> numbersList = numbers1.Concat(numbers2);            IEnumerable<int> filteringQuery =
+            IEnumerable<int> numbersList = numbers1.Concat(numbers2);
+            IEnumerable<int> filteringQuery =
                 from number in numbersList
                 where number < 3 || number > 7
                 select number;
@@ -122,7 +125,8 @@ namespace LanguageIntegratedQuery
 
             // Method Syntax
             // Query #1
-            double average = numbers1.Average();
+            double average = numbers1.Average();
+
             // Query #2
             IEnumerable<int> concatedValues = numbers1.Concat(numbers2);
 
@@ -131,7 +135,8 @@ namespace LanguageIntegratedQuery
 
 
 
-            // Mixed query and method syntax            // Query #1
+            // Mixed query and method syntax
+            // Query #1
             int numCount1 =
                 (from num in numbers1
                  where num < 3 || num > 7
@@ -142,10 +147,14 @@ namespace LanguageIntegratedQuery
                 from num in numbers1
                 where num < 3 || num > 7
                 select num;
-            int numCount2 = numbersQuery.Count();            IEnumerable<int> queryFactorsOfFour =
+            int numCount2 = numbersQuery.Count();
+
+
+            IEnumerable<int> queryFactorsOfFour =
                 from num in numbers1.Concat(numbers2)
                 where num % 4 == 0
-                select num;            List<int> factorsofFourList = queryFactorsOfFour.ToList();
+                select num;
+            List<int> factorsofFourList = queryFactorsOfFour.ToList();
 
 
 
