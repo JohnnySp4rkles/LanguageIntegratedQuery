@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B2CD07C0-52F7-4347-B5AA-A68884F2F3BD}</ProjectGuid>
+    <ProjectGuid>{79D805D5-814C-4292-919C-325B793F053F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LanguageIntegratedQuery</RootNamespace>
-    <AssemblyName>LanguageIntegratedQuery</AssemblyName>
+    <RootNamespace>CompositeJoinExample</RootNamespace>
+    <AssemblyName>CompositeJoinExample</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>LanguageIntegratedQuery.ProgramA</StartupObject>
+    <StartupObject>CompositeJoinExample.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,11 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data.cs" />
-    <Compile Include="MyExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
